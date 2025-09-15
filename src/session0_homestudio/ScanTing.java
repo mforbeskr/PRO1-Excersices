@@ -1,6 +1,5 @@
-package session0_gøgl;
+package session0_homestudio;
 
-import java.lang.invoke.StringConcatFactory;
 import java.util.Scanner;
 
 public class ScanTing

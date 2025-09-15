@@ -1,4 +1,4 @@
-package session0_gøgl;
+package session0_homestudio;
 
 import java.util.Scanner;
 

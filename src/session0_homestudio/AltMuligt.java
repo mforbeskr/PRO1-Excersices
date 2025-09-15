@@ -1,4 +1,4 @@
-package session0_gøgl;
+package session0_homestudio;
 
 public class AltMuligt
 {
@@ -7,10 +7,8 @@ public class AltMuligt
   {
 
     boolean isPerfect = true;
-    boolean isOffline = false;
 
     String name = "Georgia";
-    String food = "pizza";
     String email = "error404@gmail.com";
     String age = "27";
     String car = "Bentley";
@@ -18,6 +16,7 @@ public class AltMuligt
 
     System.out.println("Hello " + name + ".");
     System.out.println("You are " + age + " years old.");
+    System.out.println("Your email is " + email + ".");
     System.out.println("You favorite color is " + color + ".");
     System.out.println("Did you ever own a " + car + "?");
 
