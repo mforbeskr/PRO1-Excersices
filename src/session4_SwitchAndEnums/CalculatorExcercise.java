@@ -38,16 +38,17 @@ public class CalculatorExcercise
         System.out.println(num1 + " * " + num2 + " = " + result);
         break;
       case '/':
-        if (num2 != 0)
-        {
+        if (num2 != 0){
           result = num1 / num2;
-          System.out.println(num1 + " / " + num2 + " = " + result);}
+          System.out.println(num1 + " / " + num2 + " = " + result);
+          }
         else {
-          System.out.println("Error: Division by zero (0) is not allowed.");}
+          System.out.println("Error: Division by zero (0) is not allowed.");
+          }
         break;
     default: System.out.println("That made no sense. Please use +, -, *, or /.");
     }
-    System.out.println("The operator your chose : " +"'" + operator + "'");
+    System.out.println("The operator you chose was '" + operator + "' which can't be used here.");
     scanner.close();
   }
 }

@@ -20,13 +20,16 @@ public class ScanTing
 
     //  SENTENCE GAME //
 
-    System.out.print("I nat har jeg sovet ");
+    System.out.print("Færdiggør de følgende sætninger med ét enkelt ord:\n");
+
+
+    System.out.print("\nI nat har jeg sovet ");
     adjective1 = scan.nextLine();
     System.out.print("Det synes jeg er ");
     adjective2 = scan.nextLine();
     System.out.print("Nu skal jeg have mig en ");
     noun1 = scan.nextLine();
-    System.out.print("så jeg kan fortsætte dagen. Efter det så skal jeg (udsagnsord) ");
+    System.out.print("så jeg kan fortsætte dagen. Efter det, så skal jeg (udsagnsord) ");
     verb1 = scan.nextLine();
     System.out.print("ned til butikken og købe mad til min kæreste..."
         + "¯\\(ツ)/¯ Jeg tror gerne han vil have en ");
@@ -35,7 +38,7 @@ public class ScanTing
     adjective3 = scan.nextLine();
     System.out.print("altså!\nDet gør jeg, og i dag skal jeg huske at ");
     verb2 = scan.nextLine();
-    System.out.print("ham :))! Jeg savner den lille (spansk ord, starter med; g) ");
+    System.out.print("ham :))! Jeg savner den lille (spansk ord, starter med; c) ");
     noun3 = scan.nextLine();
     System.out.print("og min abdaghali derhjemme. Vi ses!\n");
 
@@ -45,9 +48,9 @@ public class ScanTing
 
     System.out.println("\nI nat har jeg sovet " + adjective1 + ".");
     System.out.println("Det synes jeg er " + adjective2 + "...");
-    System.out.println("Men alligevel, så må man tage sig en " + noun1 + "og fortsætte dagen.");
-    System.out.println("Så nu" + verb1 + " jeg ned til butikken og købe mad til min kæreste... ¯\\(ツ)/¯  ");
-    System.out.println("Jeg tror gerne han vil have en" + noun2 + " i dag");
+    System.out.println("Nu skal jeg have mig en " + noun1 + " så jeg kan fortsætte dagen. Efter det, så skal jeg (udsagnsord)");
+    System.out.println( verb1 + " ned til butikken og købe mad til min kæreste... ¯\\(ツ)/¯  ");
+    System.out.println("Jeg tror gerne han vil have en " + noun2 + " i dag");
     System.out.println("De smager også bare så " + adjective3 + " :) ");
     System.out.println("Det gør jeg, og i dag skal jeg huske at " + verb2 + " ham :)) ");
     System.out.println("Jeg savner den lille " + noun3 + " og min abdaghali derhjemme, så jeg må hellere igang!");
