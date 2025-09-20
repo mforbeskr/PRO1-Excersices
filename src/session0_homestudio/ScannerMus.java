@@ -21,23 +21,19 @@ public class ScannerMus
     boolean isStudent = scan.nextBoolean();
 
 
-    System.out.println("Hello " + name );
+    System.out.println("\nHello " + name );
     System.out.println("You are " + age + " years old");
-    System.out.println("Your gps is: " + gpa );
-    System.out.println("You are a student " + isStudent);
+    System.out.println("Your gpa is: " + gpa );
+    System.out.println("When asked if you are a student, you answered: '" + isStudent + "'.");
 
     /* ----------------------------------------------------------- */
 
     if (isStudent){ // if this boolean is true the program will print this to the console
-
-      System.out.println("Not too shabby, student!");
+      System.out.println("\nNot too shabby, student!");
     }
-    else
-      System.out.println("You are a dropout... :(");
-
-
-
-
+    else{
+      System.out.println("Which means you are a dropout... :(");
+    }
 
     scan.close();
   }

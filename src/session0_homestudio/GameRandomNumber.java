@@ -13,11 +13,11 @@ public class GameRandomNumber
     int guess;
     int attempts = 0;
     int min = 1;
-    int max = 500;
+    int max = 10;
     int randomNumber = random.nextInt(min,max +1);
 
     System.out.println("NUMBER GUESSING GAME");
-    System.out.print("\nGuess a number between " + min + " - " + max +".\n");
+    System.out.print("Guess a number between " + min + " - " + max +".\n");
 
     do
     {   // DO THIS CODE ONCE,
@@ -34,11 +34,13 @@ public class GameRandomNumber
       }
       else{
         System.out.println("\nCorrect! The number was: " + randomNumber);
-        System.out.println("You've used " + attempts + " attempts. Good job!");
       }
 
 
     }while(guess !=randomNumber);   // WHILE THIS CONDITION REMAINS TRUE
+
+    System.out.println("Good job! You've used " + attempts + " attempts. ");
+    System.out.println("The Random Number Was Generated Between " + min + " and " + max + "!");
 
     scanner.close();
   }
