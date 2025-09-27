@@ -13,7 +13,7 @@ public class GameRandomNumber
     int guess;
     int attempts = 0;
     int min = 1;
-    int max = 10;
+    int max = 444;
     int randomNumber = random.nextInt(min,max +1);
 
     System.out.println("NUMBER GUESSING GAME");
