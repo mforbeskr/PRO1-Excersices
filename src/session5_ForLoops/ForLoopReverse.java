@@ -1,4 +1,4 @@
-package session5_Loops;
+package session5_ForLoops;
 
 public class ForLoopReverse
 {
