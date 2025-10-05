@@ -6,36 +6,36 @@ public class Ex17_CalculatorV2
 {
   public static void main(String[] args)
   {
-    Scanner scanner = new Scanner(System.in);
-    double firstNumber = 0;
-    double secondNumber = 0;
-    String operator;
-
-
-    while (true) // FIRST NUMBER INPUT
+    System.out.println("Here is your calculator!");
+    while (true)
     {
-      System.out.print(
-          "Hello and welcome to your calculator!\n\nPlease enter the first number (press 'q' to quit): ");
+      Scanner scanner = new Scanner(System.in);
+      double firstNumber = 0;
+      double secondNumber = 0;
+      String operator;
 
-      if (scanner.hasNextDouble())
+      while (true) // FIRST NUMBER INPUT
       {
-        firstNumber = scanner.nextDouble();
-        break;
+        System.out.print("\nPlease enter the first number (press 'q' to quit): ");
+
+        if (scanner.hasNextDouble())
+        {
+          firstNumber = scanner.nextDouble();
+          break;
+        }
+        else if (scanner.hasNext("q"))
+        {
+          System.out.println("Exiting calculator. Goodbye!");
+          return;
+        }
+        else {
+          System.out.println("Invalid input! ");
+        }
       }
-      else if (scanner.hasNext("q"))
-      {
-        System.out.println("Exiting calculator. Goodbye!");
-        return;
-      }
-      else
-      {
-        System.out.println("Please enter a valid operator: ");
-      }
-    }
 
       while (true) // ENTER OPERATOR
       {
-        System.out.println("Enter a valid operator ( +, -, *, / ): ");
+        System.out.println("Please enter a valid operator ( +, -, *, / ): ");
         operator = scanner.next();
         if (operator.equals("+") || operator.equals("-") || operator.equals("*")
             || operator.equals("/"))
@@ -48,7 +48,7 @@ public class Ex17_CalculatorV2
         }
       }
 
-      while(true)
+      while (true)
       {
         System.out.println("Enter second number: ");
         if (scanner.hasNextDouble())
@@ -76,19 +76,27 @@ public class Ex17_CalculatorV2
       }
 
       double result = 0;
-      switch(operator){
-        case "+": result = firstNumber + secondNumber; break;
-        case "-": result = firstNumber - secondNumber; break;
-        case "*": result = firstNumber * secondNumber; break;
-        case "/": result = firstNumber / secondNumber; break;
-
-
+      switch (operator)
+      {
+        case "+":
+          result = firstNumber + secondNumber;
+          break;
+        case "-":
+          result = firstNumber - secondNumber;
+          break;
+        case "*":
+          result = firstNumber * secondNumber;
+          break;
+        case "/":
+          result = firstNumber / secondNumber;
+          break;
       }
 
-        System.out.println("Let's calculate " + firstNumber + " " + operator + " " + secondNumber + " = " + result);
-        System.out.println();
-
+      System.out.println(
+          "Let's calculate " + firstNumber + " " + operator + " " + secondNumber
+              + " = " + result);
+      System.out.println();
 
     }
   }
-
+}
