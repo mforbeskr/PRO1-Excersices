@@ -17,11 +17,19 @@ public class Person
     this.hobbies = new ArrayList<>();
   }
 
+  public Person(String name, ArrayList<String> hobbies, int age)
+  {
+    this.name = name;
+    this.hobbies = hobbies;
+    this.age = age;
+  }
+
   /// METHODS ///
 
   public void greet() {
     System.out.println(
         "Hello there, my name is " + name + " and I am " + age + " years old.");
+
   }
 
 
@@ -48,10 +56,6 @@ public class Person
   public String[] getHobbies(){
     return hobbies.toArray(new String [0]);
   }
-
-
-
-
 
 
 

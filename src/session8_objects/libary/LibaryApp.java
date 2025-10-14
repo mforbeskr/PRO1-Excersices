@@ -27,7 +27,7 @@ public class LibaryApp
       System.out.println("9. Exit");
       System.out.print("Choose an option: ");
 
-      int choice = Integer.parseInt(scanner.nextLine());
+      int choice = scanner.nextInt();
 
       switch (choice) {
         case 1 -> {
