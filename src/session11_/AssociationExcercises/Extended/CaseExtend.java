@@ -1,18 +1,17 @@
-package session11_.AssociationExcercises;
+package session11_.AssociationExcercises.Extended;
 
-import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Case
+public class CaseExtend
 {
 
   private String caseNumber;
   private String crimeType;
-  private List<String> evidence;
+  private List<Evidence> evidence = new ArrayList<>();
   private String status;
 
-  public Case(String caseNumber, String crimeType)
+  public CaseExtend(String caseNumber, String crimeType)
   {
     this.caseNumber = caseNumber;
     this.crimeType = crimeType;
@@ -40,20 +39,18 @@ public class Case
     this.status = status;
   }
 
-  public void addEvidence(String newEvidence)
-  {
-    evidence.add(newEvidence);
+
+  public void addEvidence (Evidence e){
+    this.evidence.add(e);
   }
 
-  public List<String> getEvidence()
+  public List<Evidence> getEvidence()
   {
     return evidence;
   }
 
   @Override public String toString()
   {
-    return "{caseNumber = '" + caseNumber + '\'' + ", crimeType = '"
-        + crimeType + '\'' + ", evidence = " + evidence + ", status = '" + status
-        + '\'' + '}';
+    return "Case " + caseNumber + " (" + crimeType + ") - " + status;
   }
 }

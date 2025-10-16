@@ -1,12 +1,14 @@
-package session11_.AssociationExcercises;
+package session11_.AssociationExcercises.Extended;
 
-public class Detective {
+
+public class DetectiveExtend
+{
 
   private String name;
   private String badgeNumber;
-  private Case currentCase;
+  private CaseExtend currentCase;
 
-  public Detective (String name, String badgeNumber){
+  public DetectiveExtend(String name, String badgeNumber){
     this.name = name;
     this.badgeNumber = badgeNumber;
     this.currentCase = null;
@@ -22,27 +24,28 @@ public class Detective {
     return name;
   }
 
-  public void takeCase (Case newCase){
+  public void takeCase (CaseExtend newCase){
     if(newCase != null){
       this.currentCase = newCase;
       System.out.println(name + " working on " + newCase.getCaseNumber());
     }else{
       System.out.println("Cannot take a 'null' case.");
     }
-
   }
+
   public void takeOffCase (){
     this.currentCase = null;
   }
 
-  public void addEvidence (String evidence){
-  if (currentCase != null)
-  {
-    currentCase.addEvidence(evidence);
-  }else{
-    System.out.println("Currently no case to add evidence to.");
+
+  public void addEvidence(Evidence e) {
+    if (currentCase != null) {
+      currentCase.addEvidence(e);  // ✅ delegate to Case
+      System.out.println("Added evidence to " + currentCase.getCaseNumber());
+    } else {
+      System.out.println("No case assigned!");
+    }
   }
- }
 
  public void solveCase ()
  {
@@ -59,7 +62,7 @@ public class Detective {
  public void closeCase(){
     if (currentCase !=null){
       currentCase.setStatus("Closed");
-      System.out.println("Case" + currentCase.getCaseNumber() + "is now closed.");
+      System.out.println("Case" + currentCase.getCaseNumber() + " is now closed.");
       currentCase = null;
     }
  }
