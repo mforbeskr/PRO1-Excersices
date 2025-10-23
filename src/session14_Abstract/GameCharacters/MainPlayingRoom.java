@@ -17,6 +17,10 @@ public class MainPlayingRoom
     warrior.takeDamage(120, DamageType.Physical);
     System.out.println(warrior.getCurrentHealth());
     warrior.takeDamage(120, DamageType.Magical);
+    warrior.specialAbility();
+    hunter.defend();
+    mage.takeDamage(10, DamageType.Magical);
+    mage.attack();
 
 
 

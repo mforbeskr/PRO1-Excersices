@@ -32,12 +32,13 @@ public class Warrior extends GameCharacter {
 
   @Override public void attack()
   {
-    super.attack();
+    System.out.println(name + " attacks!");
+
   }
 
   @Override public void defend()
   {
-    super.defend();
+    System.out.println(name + " defends!");
   }
 
   @Override public void specialAbility()

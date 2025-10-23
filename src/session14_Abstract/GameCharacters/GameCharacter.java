@@ -30,17 +30,11 @@ public abstract class GameCharacter {
   public void takeDamage (int damage, DamageType type){
   }
 
-  public void attack(){
-    System.out.println(name + " attacks.");
-  }
+  public abstract void attack();
 
-  public void defend (){
-    System.out.println(name + " defends.");
-  }
+  public abstract void defend ();
 
-  public void specialAbility(){
-    System.out.println(name + " uses Special Ability!");
-  }
+  public abstract void specialAbility();
 
   @Override public String toString()
   {
