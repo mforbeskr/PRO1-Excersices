@@ -9,19 +9,21 @@ public class MainPlayingRoom
     Mage mage = new Mage("Mage", 80, 140, "Codex of Darkness");
     Warrior warrior = new Warrior("Warrior", 120, 80, "Two-handed Axe");
 
-    System.out.println(hunter);
-    System.out.println(mage);
-    System.out.println(warrior);
-    warrior.levelUp();
+//    System.out.println(hunter);
+//    System.out.println(mage);
+//    System.out.println(warrior);
+//    warrior.levelUp();
+//
+//    warrior.takeDamage(120, DamageType.Physical);
+//    System.out.println(warrior.getCurrentHealth());
+//    warrior.takeDamage(120, DamageType.Magical);
+//    warrior.specialAbility();
+//    hunter.defend();
+//    mage.takeDamage(10, DamageType.Magical);
+//    mage.attack();
 
-    warrior.takeDamage(120, DamageType.Physical);
-    System.out.println(warrior.getCurrentHealth());
-    warrior.takeDamage(120, DamageType.Magical);
-    warrior.specialAbility();
-    hunter.defend();
-    mage.takeDamage(10, DamageType.Magical);
-    mage.attack();
 
+    hunter.takeDamage(3, DamageType.Physical);
 
 
   }

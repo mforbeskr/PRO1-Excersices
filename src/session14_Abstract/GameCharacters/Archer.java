@@ -15,7 +15,6 @@ public class Archer extends GameCharacter {
 
   @Override public void takeDamage(int damage, DamageType type)
   {
-    super.takeDamage(damage, type);
     int doubleTaken = (int) (damage * 1.5);
     this.currentHealth = currentHealth-doubleTaken;
     System.out.println(this.name + " suffers! Takes " + doubleTaken + " damage.");

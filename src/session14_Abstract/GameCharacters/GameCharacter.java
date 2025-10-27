@@ -24,7 +24,7 @@ public abstract class GameCharacter {
     return isAlive;
   }
   public void levelUp(){
-    this.level = level+1;
+    this.level++;
   }
 
   public void takeDamage (int damage, DamageType type){

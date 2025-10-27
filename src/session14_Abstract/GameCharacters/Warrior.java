@@ -14,7 +14,6 @@ public class Warrior extends GameCharacter {
 
   @Override public void takeDamage(int damage, DamageType type)
   {
-    super.takeDamage(damage, type);
     if (type == DamageType.Physical){
       int physTaken = (int) (damage * 0.5);
       this.currentHealth = currentHealth-physTaken;

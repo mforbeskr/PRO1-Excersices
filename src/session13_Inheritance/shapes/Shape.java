@@ -21,4 +21,10 @@ public class Shape
   {
     this.name = name;
   }
+
+
+  public void move(){
+    System.out.println(name + " moves");
+  }
+
 }

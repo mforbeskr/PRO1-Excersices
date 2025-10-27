@@ -10,5 +10,10 @@ public class runShapes
     triangle triangle = new triangle();
     Shape[] arrayOfShapes = new Shape[]{rectangle, other, circle};
 
+
+
+    circle rund = new circle(77.4);
+
+
   }
 }
