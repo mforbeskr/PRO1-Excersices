@@ -1,9 +1,5 @@
 package session15_Interfaces.MadHouse;
 
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.io.IOException;
-
 
 public class test
 {
@@ -11,13 +7,6 @@ public class test
 
   public static void main(String[] args)
   {
-    try {
-      String asciiArt = Files.readString(Path.of("src/Ascii_art.txt"));
-      System.out.println(asciiArt);
-    } catch (IOException e) {
-      e.printStackTrace();
-    }
-
     House house = new House();
     house.setLivingRoom(new LivingRoom("Living Room", "A large living room with a fireplace and a large window."));
     house.setKitchen(new Kitchen("Kitchen", "Huge kitchen with marble countertops and a large window, with a view of the garden."));
