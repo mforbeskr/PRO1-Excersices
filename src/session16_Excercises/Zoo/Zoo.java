@@ -44,11 +44,18 @@ public class Zoo
     return allAnimals;
   }
 
+  public int getTotalAnimals (){
+    int total = 0;
+    for (Enclosure enclosure : enclosures) {
+      total += enclosure.getCurrentNumberOfAnimals();
+    }
+    return total;
+  }
 
 
   @Override
   public String toString() {
-    return "Zoo{name='" + zooName + "', enclosures=" + enclosures.size() + "}";
+    return "Zoo{name: '" + zooName + "', Enclosures: " + enclosures.size() + ", Total animals: "+ getTotalAnimals()+"]";
   }
 }
 

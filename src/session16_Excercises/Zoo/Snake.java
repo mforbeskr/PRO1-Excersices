@@ -52,10 +52,5 @@ public class Snake extends Reptile{
 
   }
 
-  @Override public String toString()
-  {
-
-    return "Snake{" + "length=" + length + ", isVenomous=" + isVenomous + '}';
-  }
 }
 

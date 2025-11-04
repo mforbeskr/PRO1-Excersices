@@ -45,9 +45,4 @@ public class Lion extends Mammal
     }
   }
 
-  @Override public String toString()
-  {
-
-    return "Lion{" + "prideSize=" + prideSize + '}';
-  }
 }
